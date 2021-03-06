@@ -1,4 +1,11 @@
 // Assignment code here
+var length = prompt("Please choose password length. Must be between 8 and 128 characters long.");
+
+if (length != null) {
+  document.getElementById("demo").innerHTML =
+  "Hello " + person + "! How are you today?";
+  console.log(length);
+}
 
 
 // Get references to the #generate element
