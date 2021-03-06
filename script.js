@@ -1,21 +1,47 @@
 // Assignment code here
 
+function generatePassword () {
+
 //First prompt, Length
-var length = Number(prompt("Please choose password length. Must be between 8 and 128 characters long."));
+var length = parseInt(window.prompt("Please choose password length. Must be between 8 and 128 characters long."));
+console.log(length)
+  if (length < 8 || length > 128) {
+    alert("Invalid answer. Please select a valid password length.") }
 
 //Second prompt, Numeric
-var numeric = prompt("Would you like to include numeric characters?");
+var numeric = confirm("Would you like to include numeric characters? Select OK for 'Yes' and Cancel for 'No'");
+
+var numericArray = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+
+console.log(numeric);
 
 //Third Uppercase
-var uppercase = prompt("Would you like to include uppercase characters?");
+var uppercase = confirm("Would you like to include uppercase characters? Select OK for 'Yes' and Cancel for 'No'");
+
+var uppercaseArray = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S',
+'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+
+console.log(uppercase);
 
 //Fourth lowercase
-var lowercase = prompt("Would you like to include lowercase characters?");
+var lowercase = confirm("Would you like to include lowercase characters? Select OK for 'Yes' and Cancel for 'No'");
 
+var lowercaseArray = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's',
+'t', 'u', 'v', 'w', 'x', 'y', 'z'];
+
+console.log(lowercase);
 //Fifth special
-var special = prompt("Would you like to include special characters?")
+var special = confirm("Would you like to include special characters? Select OK for 'Yes' and Cancel for 'No'");
 
+var specialArray = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', ',', '.', ';', ':', '=', '{', '}', '?',
+'+', '>', '<', '/', '"', '_', '[', ']', '|', '~', '`', '"',]
+//Loop 
+var password = ""
+for (var i = 0; i < length; i++) {
+  password += (passwordArray)
+}
 
+};
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
@@ -26,6 +52,6 @@ function writePassword() {
 
   passwordText.value = password;
 
-}
+};
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
