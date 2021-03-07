@@ -5,7 +5,7 @@ This provides a password generator that matches your criteria through a series o
 may contain 8 to 128 charcters and special, uppercase, lowercase, and numeric characters. 
 
 ## Website Appearance
-![Image of the live website](https://github.com/Vivvec/Password-Generator/blob/main/Assets/password-gen-scrrenshot.jpg)
+![Image of the live website](https://github.com/Vivvec/Password-Generator/blob/main/Assets/password-gen-scrrenshot.JPG)
 
 ## Built With
 * HTML
